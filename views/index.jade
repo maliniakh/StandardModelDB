@@ -1,0 +1,43 @@
+extends layout
+
+mixin particleMixin(particle)
+    .particle
+        h3= particle.name
+        p= particle.discoveredBy
+        img(src='images/#{particle.img}')
+        p #{particle.mass}eV/C
+            sup 2
+
+block content
+    h1(class='header') Standard Model Database
+    #searchDiv
+        form(id='searchForm', action='search')
+            input(id='queryTextbox', name='q', value='#{query}')
+            input(id='searchButton', type='submit', value='Search')
+            select(id='groupCombo', name='g')
+                each group in particleGroups
+                    option(selected = group == selectedGroup) #{group}
+
+    #suggestionDiv
+        if suggestion
+            span Did you mean:&nbsp
+                a(href=suggestionUrl) #{suggestion}
+            span ?
+
+    if particles.length > 0
+        #particles
+            each obj in particles
+                +particleMixin(obj)
+
+    if pages.length > 0
+        #pages
+            span Pages:&nbsp;&nbsp;
+            each page, i in pages
+                if currentPage != i
+                    a(href=page) #{i+1}
+                else
+                    span #{i+1}
+                span &nbsp;
+
+    #totalCount
+        span Total count: #{count}

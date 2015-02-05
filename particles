@@ -1,0 +1,50 @@
+quarks                  Murray Gell-Mann
+      up	
+      down	
+      charm	
+      strange
+      top	
+      bottom
+      
+leptons      
+      Electron                George Johnstone Stoney	
+      Electron neutrino       Clyde Cowan
+      Muon                    Carl D. Anderson
+      Muon neutrino           Leon Lederman 
+      Tau                     Martin Lewis Perl 
+      Tau neutrino            Martin Lewis Perl 
+      
+bosons
+      Photon                  Arthur Compton
+      W boson	            UA1 experiment
+      Z boson	            UA1 experiment
+      Gluon	                  PLUTO experiments
+      Higgs boson             Peter Higgs
+      Graviton                Dmitrii Blokhintsev
+      
+4 swiftgear
+      spedzilem wiecej niz 12h czasu ale node.js i mongodb uzywam po raz pierwszy
+      ze wiele czastek ma wielu wynalazcow, ale trzymalem sie tego, ze producent ma byc jeden
+      skomentowac skalowalnosc
+      nameczylem sie z callbackowym mysleniem
+            
+todo:
+      X     uzytkownik / haslo do bazy?
+      X     paginacja
+      X     grida sparametryzować?
+      X     css
+      X     zamienic miejscami inputy
+      X     count zwrócony dokumentów
+      X     refaktorować do standardModel
+      X     automatyczne przeładowanie po zmianie grupy
+      X     jquery plik zamienić na produkcyjny
+      X     uspójnić " i '
+      X     routowanie trzeba poprawić jakoś
+      X     miała być cena, może dać masę?
+      X     pagination.jade zrobic albo wyjebac
+      X     resze grafik czastek powrzucac
+      wystawić na heroku i dać pluginowi do stestowania?
+      X     tytuł strony zmienić
+      X     podpowiadanie
+      dodać do cv: node.js, mongodb, cs
+      wrzucic na githuba
